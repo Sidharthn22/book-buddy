@@ -1,0 +1,23 @@
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background: #fffaf0;
+}
+
+.main-content {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  min-height: 100vh;
+  background: #fffaf0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding-top: 110px;
+  }
+}

@@ -1,0 +1,161 @@
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  background: #fffdf8;
+  border-right: 1px solid #e9e5da;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 45px;
+  color: #315b48;
+  font-size: 22px;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar-logo-image {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.logo-accent {
+  color: #07865d;
+}
+
+/* Navigation heading */
+.nav-label {
+  margin: 0 0 14px 12px;
+  color: #999487;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+/* Navigation links */
+.navbar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navbar-links a {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 14px;
+  border-radius: 9px;
+  color: #68736b;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbar-links a span {
+  width: 20px;
+  font-size: 19px;
+  text-align: center;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  background: #eaf0e8;
+  color: #315b48;
+}
+
+/* Sidebar bottom */
+.sidebar-bottom {
+  margin-top: auto;
+}
+
+.reading-tip {
+  padding: 17px;
+  border-radius: 12px;
+  background: #f1eee2;
+}
+
+.reading-tip > span {
+  font-size: 24px;
+}
+
+.reading-tip h3 {
+  margin: 10px 0 6px;
+  color: #315b48;
+  font-size: 14px;
+}
+
+.reading-tip p {
+  margin: 0;
+  color: #788078;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.sidebar-footer {
+  margin: 25px 0 0;
+  color: #999487;
+  font-size: 11px;
+  text-align: center;
+}
+
+/* Phone and tablet layout */
+@media (max-width: 700px) {
+  .sidebar {
+    top: 0;
+    right: 0;
+    bottom: auto;
+    width: 100%;
+    padding: 13px 16px;
+    border-right: none;
+    border-bottom: 1px solid #e9e5da;
+  }
+
+  .navbar-logo {
+    margin: 0 0 13px;
+    font-size: 20px;
+  }
+
+  .navbar-logo-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-label,
+  .sidebar-bottom {
+    display: none;
+  }
+
+  .navbar-links {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .navbar-links a {
+    flex: 1;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px 4px;
+    font-size: 11px;
+  }
+
+  .navbar-links a span {
+    width: auto;
+    font-size: 16px;
+  }
+}
